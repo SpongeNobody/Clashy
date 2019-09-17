@@ -114,6 +114,7 @@
   "devDependencies": {
     "@babel/plugin-transform-react-jsx-self": "^7.2.0",
     "@types/webpack-env": "^1.13.9",
+    "adm-zip": "^0.4.13",
     "babel-polyfill": "^6.26.0",
     "electron": "^5.0.6",
     "electron-builder": "^21.1.1",

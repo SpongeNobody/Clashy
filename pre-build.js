@@ -3,6 +3,7 @@ const path = require('path')
 const fs = require('fs')
 const request = require('request')
 const zlib = require('zlib')
+const AdmZip = require('adm-zip');
 
 const prefix = 'https://github.com/Dreamacro/clash/releases/download'
 const version = 'v0.15.0'
@@ -82,10 +83,8 @@ function unZipGzFile(filePath) {
 
 function unZipZipFile(filePath) {
     return new Promise((resolve, reject) => {
-        const fileContents = fs.createReadStream(filePath);
-        const writeStream = fs.createWriteStream(filePath.slice(0, -4));
-        const unzip = zlib.createUnzip()
-        fileContents.pipe(unzip).pipe(writeStream).on('finish', err => {
+        const zip = new AdmZip(filePath)
+        zip.extractAllToAsync(path.join('.', 'clash-binaries'), true, err => {
             if (err) {
                 reject(err)
             }
