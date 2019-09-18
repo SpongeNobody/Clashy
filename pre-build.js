@@ -78,6 +78,7 @@ function unZipGzFile(filePath) {
                 return
             }
             fs.unlinkSync(filePath)
+            fs.chmodSync(filePath.slice(0, -3), 0o755)
             resolve()
         })
     })
