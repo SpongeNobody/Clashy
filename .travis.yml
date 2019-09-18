@@ -33,7 +33,7 @@ jobs:
       os: windows
       language: node_js
       before_script:
-        -node pre-build.js
+        - node pre-build.js
       script:
         - yarn run dist
         - yarn run publish onTagOrDraft
