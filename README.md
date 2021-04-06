@@ -33,7 +33,8 @@ Check ["Sign Issue"](https://github.com/SpongeNobody/Clashy/blob/master/SignIssu
 
 ## Screenshots
 
-| ![status](./docs/status.png)   | ![proxies](./docs/proxies.png)   |
+| ![status](./docs/status.png) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSpongeNobody%2FClashy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSpongeNobody%2FClashy?ref=badge_shield)
+  | ![proxies](./docs/proxies.png)   |
 | ------------------------------------------------------- | --------------------------------------------------------- |
 | ![profile](./docs/profile.png) | ![settings](./docs/settings.png) |
 
@@ -104,3 +105,7 @@ Me either. Checkout Electron memes below!
   <img src="https://i.imgur.com/DuwkjfZ.png" width="300" />
 </div>
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSpongeNobody%2FClashy.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSpongeNobody%2FClashy?ref=badge_large)
